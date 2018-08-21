@@ -1,0 +1,33 @@
+$enable-grid-classes: true !default;
+$grid-columns: 12 !default;
+$grid-gutter-width: 20px !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1200px
+) !default;
+
+$padding-xs: 15px;
+$padding-sm: 15px;
+$padding-md: 40px;
+$padding-lg: 40px;
+$padding-xl: 80px;
+
+$container-paddings: (
+  xs: $padding-xs,
+  sm: $padding-sm,
+  md: $padding-md,
+  lg: $padding-lg,
+  xl: $padding-xl
+) !default;
+
+
+$container-max-widths: (
+  sm: calc(100% - 2 * #{$padding-sm} + #{$grid-gutter-width}),
+  md: calc(100% - 2 * #{$padding-md} + #{$grid-gutter-width}),
+  lg: calc(100% - 2 * #{$padding-lg} + #{$grid-gutter-width}),
+  xl: calc(1200px - 2 * #{$padding-xl} + #{$grid-gutter-width})
+) !default;

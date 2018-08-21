@@ -1,0 +1,9 @@
+@mixin paragraph($line-height, $line-nbr) {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: $line-nbr; /* number of lines to show */
+	line-height: $line-height;        /* fallback */
+	max-height: $line-height*$line-nbr;       /* fallback */
+}

@@ -1,0 +1,32 @@
+{
+  "name": "printinprogress",
+  "author": "rsw",
+  "version": "1.0.0",
+  "scripts": {
+    "gulp": "./node_modules/gulp/bin/gulp.js"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.3.1",
+    "@types/swiper": "^3.4.5",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-babel-minify": "^0.2.0",
+    "gulp-clean-css": "^3.x",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-typescript": "^3.2.3",
+    "gulp-uglify": "^3.x",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.5",
+    "jquery": "^3.3.1",
+    "typescript": "^2.6.2"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "bower": "^1.8.4",
+    "grunt-cli": "^1.2.0"
+  }
+}

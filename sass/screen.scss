@@ -1,0 +1,35 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+
+/* VENDORS - Default fall-backs and external files.
+========================================================================== */
+@import "vendors/normalize";
+@import "vendors/helpers";
+
+/* BASE - Base Variable file along with starting point Mixins and Placeholders.
+========================================================================== */
+@import "grid/variables";
+@import "grid/breakpoints";
+@import "grid/mixins";
+@import "grid/grid";
+
+@import "base/variables";
+@import "base/mixins";
+@import "base/keyframes";
+
+/* FRAMEWORK - Structure and layout files.
+========================================================================== */
+@import "framework/layout";
+@import "framework/home";
+@import "framework/single";
+
+/* MODULES - Re-usable site elements.
+========================================================================== */
+@import "modules/menu";
+@import "modules/footer";
+
