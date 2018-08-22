@@ -1,0 +1,59 @@
+.page_single{
+  .logo_retour{
+    img {
+      width: 50px;
+      transform: scaleX(-1);
+    }
+  }
+  .header{
+    margin-bottom: 40px;
+    display: flex;
+    object-fit: cover;
+    img.img_article{
+      height: 550px;
+      width: 40%;
+      object-fit: cover;
+      padding-right: 50px;
+    }
+    .content_global_single{
+      .content_single{
+        font-family: $fontRegular;
+      }
+    }
+  }
+  .suite{
+    margin-bottom: 50px;
+    display: flex;
+    object-fit: cover;
+    img.img_article{
+      height: 550px;
+      width: 40%;
+      object-fit: cover;
+    }
+    .content_global_single{
+      padding-right: 50px;
+      .content_single{
+        font-family: $fontRegular;
+      }
+    }
+  }
+  .galerie{
+    .grid-item { 
+      .englobe_img_grid{
+        margin-bottom: 15px;
+      }
+      width: 100%;
+      padding-right: 15px;
+
+      @media (min-width: 576px) {
+          width: 50%;
+      }
+      @media (min-width: 768px) {
+          width: 33%;
+      }
+      @media (min-width: 1024px) {
+          width: 25%;
+      }
+    }
+  }
+}

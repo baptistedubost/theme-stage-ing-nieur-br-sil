@@ -90,14 +90,16 @@ gulp.task("minify-js", function() {
 
 // DEPENDENCIES
 gulp.task('concatDependencies', function () {
-    return gulp.src([
-            'node_modules/jquery/dist/jquery.js',           
-        ])
-        .pipe(plumber({ errorHandler: handleError }))
-        .pipe(sourcemaps.init())
-        .pipe(concat('dependencies.js'))
-        .pipe(sourcemaps.write('/'))
-        .pipe(gulp.dest(outputDir + '/js'))
+    return gulp
+      .src([
+        "node_modules/jquery/dist/jquery.js",
+        "node_modules/masonry-layout/dist/masonry.pkgd.min.js",
+      ])
+      .pipe(plumber({ errorHandler: handleError }))
+      .pipe(sourcemaps.init())
+      .pipe(concat("dependencies.js"))
+      .pipe(sourcemaps.write("/"))
+      .pipe(gulp.dest(outputDir + "/js"));
 });
 
 gulp.task('uglifyDependencies', function () {

@@ -39,7 +39,7 @@ class Page {
             'post_name' => $args['post_name'],
             'posts_per_page' => $postNbr,
             'post_type' => $this->post_type,
-            'orderby' => 'menu_order',
+            'orderby' => 'title',
             'order' => 'ASC',
             'category' => $args['category'], 
             'post_status' => 'publish',

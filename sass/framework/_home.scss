@@ -12,6 +12,10 @@
         h1 {
             color: $white;
             margin: 0;
+            font-family: $fontTitle;
+        }
+        h1.titre_1 {
+            font-family: $fontTitleMedium;
         }
         display: flex;
         flex-direction: row;
@@ -29,7 +33,7 @@
                     height: 600px;
                     object-fit: cover;
                     object-position: 50% 50%;
-                    filter: grayscale(100%);
+                    // filter: grayscale(100%);
                 }
                 .fond_image_header{
                     position: absolute;
@@ -37,7 +41,7 @@
                     top: 0;
                     width: 100%;
                     height: 600px;
-                    background-color: $fontColor;
+                    background-color: $fontColorLight;
                     opacity: 0.5;
                 }
             }
@@ -114,6 +118,10 @@
     }
     .englobe_img_grid{
         position: relative;
+        img {
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
         .fond_img_grid_hover{
             position: absolute;
             top: 0;
@@ -137,16 +145,17 @@
             opacity: 0;
             transition: all 1s;
             h3 {
-                color: white;
+                color: black;
             }
             .underscore{
                 width: 100%;
                 height: 1px;
-                background-color: white;
+                background-color: black;
                 margin-bottom: 20px;
             }
             h4 {
-                color: white;
+                color: black;
+                @include paragraph(25px,1);
             }
         }
 
@@ -188,3 +197,16 @@
         }
     }
 }
+
+
+.grid-item { 
+    width: 100%;
+    padding-right: 15px;
+    @media (min-width: 576px) {
+        width: 50%;
+    }
+    @media (min-width: 1024px) {
+        width: 33%;
+    }
+}
+.grid-item--width2 { width: 50%; }
